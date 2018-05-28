@@ -1,0 +1,128 @@
+
+
+___
+/*Bootstrap css*/
+
+  /* Remove the navbar's default margin-bottom and rounded borders */
+
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+/*.row.content {min-height: 1000px}*/
+
+/* Set gray background color and 100% height */
+/*.sidenav {*/
+  /*padding-top: 20px;*/
+  /*background-color: #f1f1f1;*/
+  /*height: 1000px;*/
+/*}*/
+
+
+.footer {
+  height:500px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.text-left {
+
+  /*width: 80% !Important;*/
+
+  margin: auto;
+  /*margin-top: 20px;*/
+  margin-top: 0px;
+  padding-top:20px;
+  background-color: white;
+
+}
+.post_publisher {
+  font-weight: bold;
+  text-align: right;
+}
+.post {
+  margin-top: 30px;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+
+/*CSS for the comment*/
+
+.pic {
+  /*height:300px;*/
+  display:inline-block;
+
+}
+
+.panelMain {
+  /*float:right;*/
+  margin-left:1%;
+  display: block;
+
+}
+
+
+
+
+.placeholder {
+  background-color: #EFF1F2;
+  position: relative;
+  height: 30px;
+  width: 200% !important;
+  left: -100px;
+  overflow: visible;
+
+}
+
+.content {
+  background-color: #EFF1F2;
+}
+
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* Set black background color, white text and some padding */
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 480px) {
+  .text-left {
+
+    /*width: 80% !Important;*/
+
+    margin: auto;
+    margin-top: 0px;
+    padding-top:20px;
+
+    background-color: white;
+
+
+  }
+
+
+}
+
+
+
+/*.panel-body {*/
+  /*width:100% !important;*/
+/*}*/
