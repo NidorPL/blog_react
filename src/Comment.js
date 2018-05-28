@@ -11,45 +11,47 @@ class Comment extends Component {
     }
 
     componentDidMount() {
-        let url2 = 'https://jsonplaceholder.typicode.com/users?email=' + this.props.email;
-        // console.log(url2);
-        fetch(url2)
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    console.log("result: " + result);
 
-                    // console.log(result.name)
-                    if(result.username == undefined) {
-                        this.setState({
-                            username: 'unknown'
-                        });
-                    }
-                    else {
+        //username would be loaded here
 
-                        this.setState({
-                            isLoaded: true,
-                            username: result.name
-
-                        });
-                    }
-
-
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                    this.setState({
-                        isLoaded: true,
-                        error
-                    });
-                }
-            )
-        if(this.state.username == '[]')
-            this.setState({
-               username: 'guest'
-            });
+        // let url2 = 'https://jsonplaceholder.typicode.com/users?email=' + this.props.email;
+        // // console.log(url2);
+        // fetch(url2)
+        //     .then(res => res.json())
+        //     .then(
+        //         (result) => {
+        //
+        //             // console.log(result.name)
+        //             if(result.username === undefined) {
+        //                 this.setState({
+        //                     username: 'unknown'
+        //                 });
+        //             }
+        //             else {
+        //
+        //                 this.setState({
+        //                     isLoaded: true,
+        //                     username: result.name
+        //
+        //                 });
+        //             }
+        //
+        //
+        //         },
+        //         // Note: it's important to handle errors here
+        //         // instead of a catch() block so that we don't swallow
+        //         // exceptions from actual bugs in components.
+        //         (error) => {
+        //             this.setState({
+        //                 isLoaded: true,
+        //                 error
+        //             });
+        //         }
+        //     )
+        // if(this.state.username === '[]')
+        //     this.setState({
+        //        username: 'guest'
+        //     });
 
     }
 

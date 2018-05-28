@@ -3,24 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import Post from './Post';
 
-function Display10Posts(props) {
-
-    return (
-        <div>
-            {props.posts.slice(0,10).map((post) =>
-                <div>
-                    <Post key = {post.id} id = {post.id} title = {post.title} body = {post.body} userId = {post.userId}/>
-                    <div className = "placeholder" > </div>
-                </div>
-
-            )}
-
-        </div>
-    )
-
-}
-
-
 
 class App extends Component {
 
@@ -49,7 +31,7 @@ class App extends Component {
 
     render() {
 
-        const {error, isLoaded, posts} = this.state;
+        const {error, isLoaded} = this.state;
         if (error) {
             return <div>Error: {error.message} </div>
         } else if (!isLoaded) {
@@ -82,7 +64,16 @@ class App extends Component {
                                 <h1>Welcome to the Blog</h1>
 
 
-                                <Display10Posts posts={this.state.posts}/>
+                                <div>
+                                    {this.state.posts.slice(0,10).map((post) =>
+                                        <div key = {post.id}>
+                                            <Post  id = {post.id} title = {post.title} body = {post.body} userId = {post.userId}/>
+                                            <div className = "placeholder" > </div>
+                                        </div>
+
+                                    )}
+
+                                </div>
 
                             </div>
 

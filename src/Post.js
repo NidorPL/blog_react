@@ -109,8 +109,7 @@ class Post extends Component {
 
                     <div id="comment-box">
                         {this.state.comments.slice(0,this.state.visible).map((comment) =>
-                            <Comment key = {comment.id} name = {comment.name} body = {comment.body} email = {comment.email}
-                                     email = {comment.email} />
+                            <Comment key = {comment.id} name = {comment.name} body = {comment.body} email = {comment.email}/>
 
                         )}
 
